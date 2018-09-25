@@ -1,0 +1,16 @@
+/* pages/login/login.wxss */
+.wximg{
+  width: 260rpx;
+  height: 260rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50rpx;
+}
+.wxname{
+  text-align: center;
+  margin-top:50rpx;
+}
+button{
+  margin-top: 200rpx;
+}

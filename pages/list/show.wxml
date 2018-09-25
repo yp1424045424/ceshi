@@ -1,0 +1,65 @@
+
+<view class="photo">
+  <image wx:if="{{aa.thumb}}" src="http://localhost:3000{{thumb}}" />
+</view>
+<view class="introduction">
+        <view class="one">{{aa.name}}</view>
+        <view class="two"><text class="p">{{aa.goodsdesc}}</text></view>
+        <view class="three">
+            <view class="tl">
+                <text class="span">热销价：{{aa.price}}元</text>
+              
+            </view>
+           <view class="tr">
+               <text class="tr1"></text>
+               <text class="tr2">月售</text>
+               <text class="tr3">278</text>
+           </view>
+
+        </view>
+</view>
+<view class="line">
+  <view class="line1"></view>
+</view>
+<view class="lingjuan">
+  <image src="../image/lingjuan.png" alt=""/>
+  <view class="lingjuan2" >领卷</view>
+  <view class="lingjuan3" >满500减50</view>
+</view>
+<view class="line">
+  <view class="line1"></view>
+</view>
+<view class="term">
+        <view class="termm">
+        <view class="term1">
+            <text class="span"></text>
+            <text class="span">无额外收费</text>
+        </view>
+        <view class="term1">
+            <text class="span"></text>
+            <text class="span">爽约包赔</text>
+        </view>
+        <view class="term1">
+            <text class="span"></text>
+            <text class="span">不满意重新服务</text>
+        </view>
+    </view>
+    </view>
+    <view class="root">
+        <view class="rl">
+            <view class="rl1">
+                <image src="../image/dianpu.png" alt=""/>
+                <text class="span">店铺</text>
+            </view>
+            <view class="rl2">
+                <image src="../image/lianxi.png" alt=""/>
+                 联系商家
+            </view>
+        </view>
+        <view class="rr">
+        <navigator url="../car/car?gid={{gid}}">
+            <view class="rr1">加入购物车</view>
+        </navigator>    
+            <view class="rr2">立即下单</view>
+        </view>
+    </view>

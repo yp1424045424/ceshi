@@ -1,0 +1,63 @@
+<view class="cyx-contain">
+    <view class="cyx-container">
+        <view class="cyx-items">
+            <view class="cyx-top">
+                <view class="cyx-left">
+                    <view class="cyx-choose hot" style="background-image:url(img/cyx-gouwuche/items.png);"></view>
+                    <text class="cyx-title">宅快修</text>
+                    <image class="cyx-next" src="img/cyx-gouwuche/next.png" alt=""/>
+                </view>
+                <image class="cyx-delete" src="img/cyx-gouwuche/delete.png" alt=""/>
+            </view>
+            <view class="cyx-shop">
+                <view class="cyx-left">
+                    <view class="cyx-choose"></view>
+                    <view class="cyx-picture">
+                        <!-- <img class="cyx-product" src="img/cyx-gouwuche/product.png" alt=""> -->
+                    </view>
+                    <view class="cyx-desc">
+                        <text class="cyx-name">潜水艇高端龙头</text>
+                        <text class="cyx-price">￥60</text>
+                    </view>
+                </view>
+                <view class="cyx-right">
+                    <image src="img/cyx-gouwuche/sub.png" alt="" class="cyx-sub"/>
+                    <text class="cyx-number">01</text>
+                    <image src="img/cyx-gouwuche/add.png" alt="" class="cyx-add"/>
+                </view>
+            </view>
+            <view class="cyx-bottom">
+                <view class="cyx-left">
+                    <text class="cyx-totalPrice">合计</text>
+                    <text class="cyx-mao">:</text>
+                    <text class="cyx-num">￥162</text>
+                </view>
+                <view class="cyx-btn" type="submit">去下单</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="cyx-footer">
+    <view class="cyx-container">
+        <view class="cyx-top">
+            <view class="cyx-choose"></view>
+            <text class="cyx-title">全选</text>
+        </view>
+        <view class="cyx-bottom">
+            <view class="cyx-leftBox">
+                <view class="cyx-allPrice">
+                    <image src="img/cyx-gouwuche/allprice.png" alt="" class="cyx-ap"/>
+                    <text class="cyx-heji">合计</text>
+                    <text class="cyx-mao">:</text>
+                    <text class="cyx-num">￥162</text>
+                </view>
+                <view class="cyx-extraPrice">
+                    <image src="img/cyx-gouwuche/extraprice.png" alt="" class="cyx-ep"/>
+                    <text class="cyx-yunfei">运费￥20</text>
+                    <text class="cyx-youhui">已优惠￥20</text>
+                </view>
+            </view>
+            <view class="cyx-pay" type="submit">结算</view>
+        </view>
+    </view>
+</view>

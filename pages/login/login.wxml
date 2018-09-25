@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<!-- <view wx:if='{{user.length}}'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+      <input placeholder="用户名"/>
+    </view>
+    <view>
+      <input placeholder="密码"/>
+    </view>
+  </form>
+</view> -->
+<!-- <view wx:else> -->
+<view wx:if='!hasUserInfo && canIUse'>
+    <view class='wximg'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='wxname'>
+       <open-data type="userNickName"></open-data>
+    </view> 
+      <button type="primary"open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
+

@@ -1,0 +1,30 @@
+<view>
+   <!-- <picker>太原</picker> -->
+</view>
+
+<view>
+      <input class='sec' placeholder='请搜索你的商品'></input>
+</view>
+
+<view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="{{index}}">
+          <swiper-item>
+            <!-- <view class="swiper-item {{item}}"></view> -->
+             <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+   <view class='fat'>
+        <view class='boby' wx:for="{{category}}" wx:key="{{index}}">
+        <navigator url="../list/list?cid={{item.cid}}">
+             <image src='http://localhost:3000/img/l{{index+1}}.png' class='biao'></image> 
+              <text class='biaoz'>{{item.cname}}</text> 
+         </navigator>     
+        </view>
+        <view>
+        <image class='biao'></image>
+        </view>
+   </view>

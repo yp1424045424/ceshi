@@ -1,0 +1,66 @@
+
+<scroll-view scroll-x>
+        <view class="main">
+          <view bindtap='addhot' wx:for="{{title}}"  data-cid="{{item.cid}}" class="p {{item.cid==cid1?'hot':''}}" wx:key='{{index}}'>{{item.cname}}              </view>  
+        </view>
+    </scroll-view>
+
+
+<view class="cate">
+    <view class="main1">
+        <view class="cateBox {{classname=='gid'?'hot':''}}" data-sort="gid" bindtap="changesort">
+            <text>综合</text>
+            <image src="../image/xiala.png" style="width:30rpx;height:30rpx;"/>
+
+        </view>
+        <view class="cateBox {{classname=='total'?'hot':''}}" data-sort="total" bindtap="changesort">
+            <text>销量</text>
+            <image src="../image/xiala.png" style="width:30rpx;height:30rpx;"/>
+
+        </view>
+        <view class="cateBox {{classname=='price'?'hot':''}}" data-sort="price" bindtap="changesort">
+            <text>价格降序</text>
+            <image src="../image/xiala.png" style="width:30rpx;height:30rpx;"/>
+
+        </view>
+    </view>
+</view>
+
+
+    <view class="sk-bag-scroll">
+
+        <view class="bag-item" wx:for="{{goods}}" wx:key="{{index}}">
+        <navigator url="../list/show?gid={{item.gid}}">
+            <view class="sk-bag-photo">
+                <image src='http://localhost:3000{{item.thumb}}'></image>
+            </view>
+        </navigator>
+            <view class="sk-bag-content">
+                <view class="sk-service-type">
+                    <text class="h3">{{item.name}}</text>
+                </view>
+                <view class="sk-service-desc">
+                    <text class="p">{{item.goodsdesc}}</text>
+                </view>
+                <view class="sk-estimate_sale_price">
+                    <view class="sk-estimate sk-item">
+                        <view class="dot"></view>
+                        <view class="text">好评</view>
+                        <view class="number">90<text>%</text></view>
+                    </view>
+                    <view class="sk-sale sk-item">
+                        <view class="dot"></view>
+                        <view class="text">月售</view>
+                        <view class="number">278</view>
+                    </view>
+                    <view class="sk-price">
+                        <view>{{item.price}}元/件</view>
+                    </view>
+                </view>
+                <view class="sk-service-operator">
+                    <!-- <img src="img/Tnine/bds.png" alt=""> -->
+                    <text class="span">{{item.keyword}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
